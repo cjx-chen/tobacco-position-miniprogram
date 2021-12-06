@@ -1,0 +1,11 @@
+<!-- pages/home/home.wxml -->
+<view class="search-block">
+  <input class="longitude" bind:change="readLongitude" type="digit" placeholder="请输入经度" />
+  <input class="latitude" bind:change="readLatitude" type="digit" placeholder="请输入纬度" />
+  <button class="searchBtn" bind:tap="getResult">查询</button>
+</view>
+<view class="cell-block" wx:if="{{ list.length !== 0 }}">
+  <van-cell-group wx:for="{{ list }}" wx:key="index">
+    <van-cell bind:tap="gotoDetail" title="{{ item.store }}" value="{{ item.manager }}" label="{{ item.addr }}" data-item="{{ item }}" />
+  </van-cell-group>
+</view>

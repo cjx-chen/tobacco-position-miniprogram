@@ -1,0 +1,23 @@
+/* pages/home/home.scss */
+.search-block {
+  display: flex;
+  margin: 5rpx;
+}
+
+.longitude, .latitude {
+  margin: 5rpx;
+  padding: 16rpx;
+  border: 1px solid rgba(120, 120, 126, 0.3);
+  border-radius: 10rpx;
+}
+
+.searchBtn {
+  margin: 5rpx;
+  background: rgb(25, 137, 250);
+  color: white;
+  font-weight: lighter;
+}
+
+.searchBtn:active {
+  background: rgb(23,124,225);
+}

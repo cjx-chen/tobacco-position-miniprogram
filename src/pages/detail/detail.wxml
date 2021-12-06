@@ -1,0 +1,17 @@
+<view wx:if="{{ items.length !== 0 }}">
+  <van-cell-group>
+  <van-cell title="许可证号码" value="{{ items.licence }}" />
+  <van-cell title="商店名称" value="{{ items.store }}" />
+  <van-cell title="地址" value="{{ items.addr }}" />
+  <van-cell title="负责人" value="{{ items.manager }}" />
+  <van-cell title="联系电话" value="{{ items.phone }}" />
+  <van-cell title="学校名称" value="{{ items.school }}" />
+  <van-cell title="距离学校（米）" value="{{ items.distance }}" />
+  <van-cell title="坐标位置" value="{{ items.coord }}" />
+  <van-cell title="纬度" value="{{ items.lat }}" />
+  <van-cell title="经度" value="{{ items.lng }}" />
+</van-cell-group>
+</view>
+<view wx:else>
+  暂无详细数据
+</view>
